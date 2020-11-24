@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className='text-secondary'>Hello Dojo!</h1>
+      <h3 className="text-danger">Things I need to do:</h3>
+      <ul className='bg-dark text-light '>
+        <li>Get Coffee</li>
+        <li>Eat breakfast</li>
+        <li>Finish Todays assignmnets</li>
+        <li>Learn React</li>
+        <li className='text-primary'>Sleep Early!!!</li>
+      </ul>
     </div>
   );
 }
